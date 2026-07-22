@@ -10,32 +10,32 @@
 <body>
   <header>
     <h1>🚗 CAR DEALERS 🚗</h1>
-    <p>Brand New & Luxury Cars – Prices in Ghana Cedis</p>
+    <p>Luxury & Brand New Cars – Prices in Ghana Cedis</p>
   </header>
 
   <section class="cars">
-    <h2>Available Cars</h2>
+    <h2>Lamborghini Models</h2>
     <div class="car-card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Lamborghini_Aventador.jpg" alt="Lamborghini">
+      <img src="images/lamborghini-aventador.jpg" alt="Lamborghini Aventador">
       <h3>Lamborghini Aventador</h3>
       <p>₵2,500,000</p>
     </div>
     <div class="car-card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Ferrari_488_GT3.jpg" alt="Ferrari">
-      <h3>Ferrari 488 GT3</h3>
+      <img src="images/lamborghini-huracan.jpg" alt="Lamborghini Huracan">
+      <h3>Lamborghini Huracan</h3>
       <p>₵2,200,000</p>
     </div>
+    <!-- Add 8 more Lamborghini models here -->
+
+    <h2>Ferrari Models</h2>
     <div class="car-card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/BMW_M8.jpg" alt="BMW">
-      <h3>BMW M8</h3>
-      <p>₵950,000</p>
+      <img src="images/ferrari-488.jpg" alt="Ferrari 488">
+      <h3>Ferrari 488 GTB</h3>
+      <p>₵2,300,000</p>
     </div>
-    <div class="car-card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Toyota_Supra.jpg" alt="Toyota">
-      <h3>Toyota Supra</h3>
-      <p>₵600,000</p>
-    </div>
-    <!-- Add more cars like Dodge, Opel, Nissan, Honda, Hyundai, Citroën, Devil 16 -->
+    <!-- Add 9 more Ferrari models -->
+
+    <!-- Repeat sections for Devil 16, BMW, Dodge, Opel, Toyota, Nissan, Citroën, Honda, Hyundai -->
   </section>
 
   <section class="order-form">
@@ -50,9 +50,10 @@
       <label for="car">Select Car:</label>
       <select id="car" required>
         <option value="Lamborghini Aventador">Lamborghini Aventador</option>
-        <option value="Ferrari 488 GT3">Ferrari 488 GT3</option>
+        <option value="Ferrari 488 GTB">Ferrari 488 GTB</option>
         <option value="BMW M8">BMW M8</option>
         <option value="Toyota Supra">Toyota Supra</option>
+        <!-- Add all other models here -->
       </select>
 
       <label for="address">Delivery Address:</label>
@@ -90,12 +91,6 @@ header h1 {
   text-shadow: 3px 3px #ff0000;
 }
 
-header p {
-  font-size: 1.3em;
-  margin-top: 10px;
-  color: #00ccff;
-}
-
 .cars {
   display: flex;
   flex-wrap: wrap;
@@ -131,11 +126,6 @@ header p {
   padding: 25px;
   border-radius: 15px;
   box-shadow: 0 6px 12px rgba(0,0,0,0.25);
-}
-
-.order-form h2 {
-  text-align: center;
-  color: #ff0000;
 }
 
 form label {
@@ -224,3 +214,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
   console.log("All Orders:", orders);
 });
+
+   
